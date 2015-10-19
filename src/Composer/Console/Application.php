@@ -254,6 +254,14 @@ class Application extends BaseApplication
         return $this->io;
     }
 
+    /**
+     * @param  IOInterface       $io
+     */
+    public function setIO(IOInterface $io)
+    {
+        $this->io = $io; 
+    }
+
     public function getHelp()
     {
         return self::$logo . parent::getHelp();
